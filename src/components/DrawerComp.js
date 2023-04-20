@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box, IconButton, List, ListItemButton, Typography } from '@mui/material';
+import { Box, IconButton, List, ListItemButton } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 const DrawerComp = () => {
