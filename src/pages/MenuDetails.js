@@ -32,7 +32,7 @@ const MenuDetails = () => {
                     <Typography variant='h5' component={'h5'}>
                      {item.category}                    
                     </Typography>
-                    <Button component={Link} to="/" variant="contained" color="primary" sx={{marginTop:'30px'}}>
+                    <Button component={Link} to="/" variant="contained" color="secondary.main" sx={{marginTop:'30px'}}>
                         Back To Home
                     </Button>
                 </CardContent>
