@@ -1,0 +1,97 @@
+https://reactheme.com/products/wordpress/dinenos/home-one-dark/
+
+const themeTypography={
+	fontFamily:'Roboto, sans-serif',
+	htmlFontSize:16,
+	fontSize:16,
+	fontWeight:400,
+	caption:{
+		fontSize:'0.8rem'
+		fontWeight:400,
+	},
+	body2:{
+		fontSize:0.95rem,
+		fontWeight:400,
+	},
+	body1:{
+		fontSize:'1.15rem',
+		fontWeight:400,
+		lineHeight:1.2,
+	},
+	h6{
+		fontSize:'1.25rem',
+		fontWeight:400,
+		lineHeight:1.2,
+	},
+	h5{
+		fontSize:'1.35rem',
+		fontWeight:400,
+		lineHeight:1.2,
+	},
+	h4{
+		fontSize:'1.75rem',
+		fontWeight:500,
+		lineHeight:1.2,
+	},
+	h3{
+		fontSize:'2.25rem',
+		fontWeight:400,
+		lineHeight:1.2,
+	},
+	h2{
+		fontSize:'3rem',
+		fontWeight:500,
+		lineHeight:1.2,
+	},
+	h1{
+		fontSize:'4rem',
+		fontWeight:700,
+		lineHeight:1.2,
+	},
+	button:{
+		textTransform:'none',
+	},
+};
+
+export default themeTypography;
+
+
+change the textbox color:
+
+import {styled} from '@mui/material/styles';
+
+const CssTextField = styled(TextField)({
+'& .MuiInput-underline:after':{
+	borderBottomColor:'red'
+}
+})
+
+OR
+
+import {makeStyles} from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme=>({
+textField:{
+	border:'1px solid blue'
+}
+}))
+
+const classes = useStyles()
+
+<textField className={classes.textField}/>
+
+
+
+1) custom theme
+2) Text Field
+3) Date and Time Pickers
+4) Button
+5) Appbar and Drawer
+6) Card and Paper
+7) Tabs used for filter gallery
+8) Grid
+9) Box
+10) Typography
+11) useMediaQuery,
+12) Timeline
+13) Rating

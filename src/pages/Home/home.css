@@ -1,0 +1,53 @@
+/* .hero-banner{
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center, bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+
+/**/
+
+
+/*welcome info*/
+/* .welcome-resto-img{
+    display: flex;
+    align-items: center;
+}
+.lineshap {
+    position: absolute;
+    left: -5px;
+    z-index: 1;
+}
+.aboutus1 {
+    z-index: 1;
+}
+.aboutus2-main {
+    margin-left: -100px;
+    border: 10px solid #fff;
+    margin-bottom: -150px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+}
+.about2-img{width: 100%;}
+.round-img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+@media only screen and(max-width:767px){
+    .aboutus1{max-width: auto;}
+    .aboutus2-img .about2{max-width: auto;}
+}
+@media screen and (max-width: 991px) {
+    .aboutus1{max-width: 250px;}
+    .aboutus2-img{margin-bottom: 0;}
+    .aboutus2-img .about2{max-width: 262px;}
+    .lineshap{max-width: 550px;}
+} */
