@@ -8,6 +8,7 @@ import PageNotFound from './pages/PageNotFound';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer';
 import { CssBaseline } from '@mui/material';
+import MenuDetails from './pages/MenuDetails';
 const App=()=>{
   return (
     <>
@@ -17,6 +18,7 @@ const App=()=>{
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/menu' element={<Menu/>}/>
+          <Route path='/menu-details/:id' element={<MenuDetails/>}/>
           <Route path='/aboutus' element={<Aboutus/>}/>
           <Route path='/contactus' element={<Contactus/>}/>
           <Route path='*' element={<PageNotFound/>}/>

@@ -27,16 +27,14 @@ const theme = createTheme({
             fontFamily: 'Arapey, serif',
             fontSize:'4rem',
             fontWeight:400,
-            lineHeight:1,
-            color:'#fff'
+            lineHeight:1
         },
         h2:{
             fontFamily: 'Arapey, serif',
             fontSize:'3rem',
             fontWeight:400,
             lineHeight:1,
-            margin:'30px 0',
-            color:'#fff'
+            margin:'30px 0'
         },
         h6:{
             fontFamily: 'Roboto, sans-serif',

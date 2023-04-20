@@ -79,7 +79,7 @@ const WelcomeResto = () => {
         <Grid item sm={12} md={6}>
             <Box className="welcome-main-content" sx={{textAlign:'center',padding:{xs:'15px',sm:'140px 15px 0 15px', md:'60px 0 0 115px',lg:'60px'}}}>
                 <Box component={'img'} src={titleImg} alt='title image'/>
-                <SectionTitle titleHeader={'Welcome To Our Luxury Restaurant'}/>
+                <SectionTitle titleHeader={'Welcome To Our Luxury Restaurant'} titleColor={'text.white'}/>
                 <Typography variant='body1' color={'text.main'} sx={{paddingBottom:'50px'}}>
                 It’s the story of an everlasting love affair, Dieter Delicioz and the Atlantic Ocean. Our proximity to the abundant riches of the sea and Portugal’s excellent produce.
                 </Typography>

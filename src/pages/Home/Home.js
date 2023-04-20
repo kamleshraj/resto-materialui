@@ -55,7 +55,7 @@ const Home = () => {
         <Box className='ourfood-menu' sx={{bgcolor:'primary.main',p:'7rem 2.5rem 7rem 2.5rem',"@media (max-width:600px)": {p:2}}}>
             <Box className='ourfood-menu-header' sx={{textAlign:'center'}}>
                 <Box component={'img'} src={titleImg} alt='title image'/>
-                <SectionTitle titleHeader={'Our Food Menu'}/>
+                <SectionTitle titleHeader={'Our Food Menu'} titleColor={'text.white'}/>
                 <Typography variant='body1' color={'text.main'}>
                 Its the story of an everlasting love affair, Dieter Delicioz and the Atlantic Ocean in the big air.
                 </Typography>
@@ -82,9 +82,9 @@ const Home = () => {
            </Grid>
         </Box>
         <Box className='starter-main-dish' sx={{bgcolor:'primary.main',p:'5rem 2.5rem 5rem 2.5rem',"@media (max-width:600px)": {p:2}}}>
-            <Box className='ourfood-menu-header' sx={{textAlign:'center',marginBottom:'60px'}}>
+            <Box className='ourfood-menu-header' sx={{textAlign:'center',marginBottom:{sm:'15px',lg:'60px'}}}>
                 <Box component={'img'} src={titleImg} alt='title image'/>
-                <SectionTitle titleHeader={'Starters & Main Dishes'}/>
+                <SectionTitle titleHeader={'Starters & Main Dishes'} titleColor={'text.white'}/>
                 <Typography variant='body1' color={'text.main'}>
                 It’s the story of an everlasting love affair, Dieter Delicioz and the Atlantic Ocean in the big air.
                 </Typography>

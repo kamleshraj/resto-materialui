@@ -23,7 +23,8 @@ export const MenuData = [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
       image: Dosa,
       price: 200,
-      category:'breakfast'
+      category:'breakfast',
+      rating:4
     },
   {
       id:2,
@@ -32,7 +33,8 @@ export const MenuData = [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
       image: Chola,
       price: 250,
-      category:'dinner'
+      category:'dinner',
+      rating:5
     },
   {
     id:3,
@@ -41,7 +43,8 @@ export const MenuData = [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
       image: Idli,
       price: 300,
-      category:'breakfast'
+      category:'breakfast',
+      rating:2.5
     },
   {
     id:4,
@@ -50,7 +53,8 @@ export const MenuData = [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
       image: MasalaDosa,
       price: 100,
-      category:'lunch'
+      category:'lunch',
+      rating:3
     },
   {
     id:5,
@@ -59,7 +63,8 @@ export const MenuData = [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
       image: Paneer,
       price: 400,
-      category:'breakfast'
+      category:'breakfast',
+      rating:4.5
     },
   {
     id:6,
@@ -68,7 +73,8 @@ export const MenuData = [
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
       image: Gujrati,
       price: 500,
-      category:'dinner'
+      category:'dinner',
+      rating:3.5
   }
   ];
 

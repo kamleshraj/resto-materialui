@@ -13,7 +13,7 @@ const StarterandMenu = () => {
                   <Box component={'img'} src={item.image} alt='title image' sx={{borderRadius:'100px',width:{xs:'65px',lg:'90px'},height:{xs:'65px',lg:'90px'}, margin:{xs:'15px'}}}/>
                   <Box sx={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
                     <Box sx={{marginRight:'30px'}}>
-                    <Typography variant='h2' component={'h6'} sx={{fontSize:'1.5rem',marginBottom:'.5rem',margin:'10px 0'}}>
+                    <Typography variant='h2' component={'h6'} color={'text.white'} sx={{fontSize:'1.5rem',marginBottom:'.5rem',margin:'10px 0'}}>
                       {item.title}
                     </Typography>
                     <Typography variant='body1' color={'text.main'}>
