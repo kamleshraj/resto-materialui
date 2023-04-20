@@ -15,7 +15,7 @@ import img6 from '../assets/images/footer/img6.jpg'
 const Footer = () => {
   return (
   <>
-    <Box sx={{bgcolor:'primary.dark', p:7, '& (max-width:768px)':{backgroundColor:'red'}}}>
+    <Box sx={{bgcolor:'primary.dark', p:{xs:'1.5rem',lg:'5rem 2rem'}}}>
         {/* <Box sx={{my:3,"& svg":{fontSize:'2rem',cursor:'pointer',padding:'0 7px',"& :hover":{color:'goldenrod',transform:'translateX(5px)',transition:'all 400ms'}}}}>
             
         </Box> */}

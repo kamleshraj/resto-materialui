@@ -12,6 +12,7 @@ import { FilterGallery } from './FilterGallery';
 import StarterandMenu from './StarterandMenu';
 import styled from '@emotion/styled';
 import CounterUpPage from './CouterUp/CounterUpPage';
+
 const HeroBanner=styled(Box)({
     background:`url(${BannerImg})`,
     minHeight: '70vh',

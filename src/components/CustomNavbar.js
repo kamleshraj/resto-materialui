@@ -1,68 +1,70 @@
-import React, { useState } from 'react'
-import {AppBar, Container, Toolbar, Box,IconButton, Button, Drawer, Link as LinkAnchor,Typography} from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'react-router-dom';
-import Logo from './Logo';
+import { AppBar, Box, Container, List, useTheme, useMediaQuery, ListItemButton, Toolbar } from '@mui/material'
+import React from 'react'
+import Logo from './Logo'
+import {NavLink } from 'react-router-dom'
+import styled from '@emotion/styled'
 
-const CustomNavbar = () => {
-    const [mobileOpen,setMobileOpen]=useState(false)
-    const navItems=['Home','Menu','About us','Contact us']
-    
-    //drawer menu
-    const handleDrawerToggle=()=>{
-        setMobileOpen(!mobileOpen)
+import DrawerComp from './DrawerComp';
+const NavbarMenu = styled('nav')(({ theme }) => ({
+    '& a':{
+        color:'#fff',
+        textDecoration:'none',
+        paddingBottom:'5px'
+        // [theme.breakpoints.down('sm')]:{
+        //     color:'blue'
+        // }
+    },
+    '& a:hover':{
+        color:'#ffac29'
+    },
+    '& .active':{
+        borderBottom: '1px solid #ffac29'
     }
-    const drawer=(
-        <Box onClick={handleDrawerToggle} sx={{textAlign:'center'}}>
-            {navItems.map((item) => (
-            <Button key={item} sx={{ color: '#000',display:'flex',flexDirection:'column' }}>
-                {item}
-            </Button>
-            ))}
-        </Box>
-    )
+}))
+const CustomNavbar = () => {
+    const theme = useTheme();
+    const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
-    <>
-    <AppBar position="sticky" component={'nav'} sx={{bgcolor:'main',boxShadow:'none'}}>
-        <Container maxWidth='xl'>
-            <Toolbar disableGutters className='main-navbar'>
-                <Box sx={{ flexGrow: 1, display: { md: 'flex' }, alignItems:'center'}}>
-                <Logo/>
-                    <Box sx={{display:{xs:'none',md:'block',marginLeft:'150px'}}}>
-                        {navItems.map((item,index) => (
-                            <Button key={item} component={Link} to={index===0 ?'/':`/${item.toLocaleLowerCase()}`} sx={{ color: '#fff' }}>
-                                {item}
-                            </Button>
-                        ))}
-                    </Box>
-                </Box>
-             
-                <Box sx={{display:{xs:'none',sm:'block',flexGrow:1,textAlign:'center'},'@media (min-width:991px)':{textAlign: 'right'}}}>
-                    <Button type='button' variant='contained' sx={{bgcolor:'secondary'}}>
-                    <Typography variant='body1' sx={{color:'secondary.main','& a':{display:'block',color:'text.white',fontSize:'1.5rem',fontWeight:'bold'}}}>
-              BOOK A TABLE
-              <LinkAnchor href="tel:88899900011" underline='none'>888 999 000 11</LinkAnchor>
-            </Typography>
-                    </Button>
-                </Box>
-                <IconButton
-                 onClick={handleDrawerToggle}
-                 edge="start" color="inherit" aria-label="menu" sx={{ display: { xs: 'flex', md: 'none' } }}>
-                    <MenuIcon />
-                </IconButton>
-            </Toolbar>
+    <AppBar position="static" >
+    <Container maxWidth="lg">
+      <Toolbar sx={{justifyContent:'space-between'}}>
+        
+      {isMatch ? (
+        <>
+            <Logo/>
+            <DrawerComp/>
+        </>
+      ):(
+        <>
+        <Logo/>
+        <Box component={'nav'}>
+            <NavbarMenu>
+                <List sx={{display:'flex',flexDirection:'row'}}>
+                    <ListItemButton>
+                        <NavLink to='/'>Home</NavLink>
+                    </ListItemButton>
+                    <ListItemButton>
+                        <NavLink to='/menu'>Menu</NavLink>
+                    </ListItemButton>
+                    <ListItemButton>
+                        <NavLink to='/aboutus'>About US</NavLink>
+                    </ListItemButton>
+                    <ListItemButton>
+                        <NavLink to='/contactus'>Contact US</NavLink>
+                    </ListItemButton>
+                </List>
+                </NavbarMenu>
+            </Box>
+            <Box>
+                Book A Table
+            </Box>
+            </>
+      )}
+        </Toolbar>
         </Container>
     </AppBar>
-    <Box component='nav'>
-        <Drawer variant='temporary' open={mobileOpen} onClose={handleDrawerToggle} 
-        sx={{display:{xs:'block',md:'none'},"& .MuiDrawer-paper":{
-            boxSizing:'border-box',
-            width:'240px'
-        }}}>
-            {drawer}
-        </Drawer>
-    </Box>
-</>
-)}
+  )
+}
 
 export default CustomNavbar
