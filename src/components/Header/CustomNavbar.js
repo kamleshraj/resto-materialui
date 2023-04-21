@@ -1,6 +1,6 @@
 import { AppBar, Box, Container, List, useTheme, useMediaQuery, ListItemButton, Toolbar, Typography } from '@mui/material'
 import React from 'react'
-import Logo from './Logo'
+import Logo from '../Logo'
 import {NavLink } from 'react-router-dom'
 import styled from '@emotion/styled'
 

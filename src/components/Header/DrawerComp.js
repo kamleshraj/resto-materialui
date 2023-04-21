@@ -1,9 +1,15 @@
 import React,{useState} from 'react'
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box, IconButton, List, ListItemButton } from '@mui/material';
+import { Box, IconButton, List, ListItemButton,Divider } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import Logo from './Logo';
+import Logo from '../Logo';
+import styled from '@emotion/styled';
+
+const StyledDrawer=styled(List)({
+   'a':{ textDecoration:'none'}
+})
+
 const DrawerComp = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
   return (
@@ -16,20 +22,23 @@ const DrawerComp = () => {
         <Box sx={{bgcolor:'primary.main',p:3}}>
             <Logo/>
         </Box>
-        <List sx={{display:'flex',flexDirection:'column',minWidth:'250px'}}>
+        <StyledDrawer sx={{display:'flex',flexDirection:'column',minWidth:'250px'}}>
             <ListItemButton onClick={() => setOpenDrawer(false)}>
-                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/' underline="none">Home</NavLink>
             </ListItemButton>
+            <Divider />
             <ListItemButton onClick={() => setOpenDrawer(false)}>
-                <NavLink to='/menu'>Menu</NavLink>
+                <NavLink to='/menu' underline="none">Menu</NavLink>
             </ListItemButton>
+            <Divider />
             <ListItemButton onClick={() => setOpenDrawer(false)}>
-                <NavLink to='/aboutus'>About Us</NavLink>
+                <NavLink to='/aboutus' underline="none">About Us</NavLink>
             </ListItemButton>
+            <Divider />
             <ListItemButton onClick={() => setOpenDrawer(false)}>
-                <NavLink to='/contactus'>Contact Us</NavLink>
+                <NavLink to='/contactus' underline="none">Contact Us</NavLink>
             </ListItemButton>
-        </List>
+        </StyledDrawer>
     </Drawer>
     <IconButton sx={{ color: "white", marginLeft: "auto" }} 
                onClick={() => setOpenDrawer(!openDrawer)}>

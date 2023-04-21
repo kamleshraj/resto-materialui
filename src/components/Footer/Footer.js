@@ -1,16 +1,16 @@
 import { Box, Grid, Link, List, ListItem, ListItemIcon, ListItemText, Stack, Typography } from '@mui/material'
 import React from 'react'
-import { restoInfo,footerGetTouch } from '../data/RestoData';
+import { restoInfo,footerGetTouch } from '../../data/RestoData';
 
-import Logo from './Logo';
+import Logo from '../Logo';
 
 //images for footer
-import img1 from '../assets/images/footer/img1.jpg'
-import img2 from '../assets/images/footer/img2.jpg'
-import img3 from '../assets/images/footer/img3.jpg'
-import img4 from '../assets/images/footer/img4.jpg'
-import img5 from '../assets/images/footer/img5.jpg'
-import img6 from '../assets/images/footer/img6.jpg'
+import img1 from '../../assets/images/footer/img1.jpg'
+import img2 from '../../assets/images/footer/img2.jpg'
+import img3 from '../../assets/images/footer/img3.jpg'
+import img4 from '../../assets/images/footer/img4.jpg'
+import img5 from '../../assets/images/footer/img5.jpg'
+import img6 from '../../assets/images/footer/img6.jpg'
 
 const Footer = () => {
   return (
