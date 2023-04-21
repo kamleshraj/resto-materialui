@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import { Box, Card, CardContent, Container, Rating, Stack, Typography,Button } from '@mui/material'
 import { useParams } from 'react-router-dom'
-import { MenuData } from '../data/mData'
+import { MenuData } from '../../data/mData'
 import { Link } from 'react-router-dom'
 const MenuDetails = () => {
     const { id } = useParams()

@@ -1,4 +1,4 @@
-import { AppBar, Box, Container, List, useTheme, useMediaQuery, ListItemButton, Toolbar } from '@mui/material'
+import { AppBar, Box, Container, List, useTheme, useMediaQuery, ListItemButton, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import Logo from './Logo'
 import {NavLink } from 'react-router-dom'
@@ -26,7 +26,7 @@ const CustomNavbar = () => {
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static" >
+    <AppBar position="sticky" component={'nav'} sx={{bgcolor:'main',boxShadow:'none'}}>
     <Container maxWidth="lg">
       <Toolbar sx={{justifyContent:'space-between'}}>
         
@@ -48,16 +48,21 @@ const CustomNavbar = () => {
                         <NavLink to='/menu'>Menu</NavLink>
                     </ListItemButton>
                     <ListItemButton>
-                        <NavLink to='/aboutus'>About US</NavLink>
+                        <NavLink to='/aboutus'>About Us</NavLink>
                     </ListItemButton>
                     <ListItemButton>
-                        <NavLink to='/contactus'>Contact US</NavLink>
+                        <NavLink to='/contactus'>Contact Us</NavLink>
                     </ListItemButton>
                 </List>
                 </NavbarMenu>
             </Box>
-            <Box>
-                Book A Table
+            <Box sx={{textAlign:'center'}}>
+                <Typography varient="body" color={'text.main'}>
+                  Book A Table
+                </Typography>
+                <Typography varient="h3" component={'h4'} fontWeight={'bold'}>
+                  +847 6523 8954
+                </Typography>
             </Box>
             </>
       )}

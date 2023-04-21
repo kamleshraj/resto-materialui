@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 
-const BottomToTop = () => {
+const BottomToTopScroll = () => {
   return (
    <Box>
     <Typography>Top</Typography>
@@ -9,4 +9,4 @@ const BottomToTop = () => {
   )
 }
 
-export default BottomToTop
+export default BottomToTopScroll

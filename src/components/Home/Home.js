@@ -1,12 +1,11 @@
 import React from 'react'
 import {Box, Typography, Container, Stack, Grid} from '@mui/material';
 import BannerImg from '../../assets/images/banner.jpeg';
-import '../../pages/Home/home.css';
-import SectionTitle from '../../components/SectionTitle';
-import CustomButton from '../../components/CustomButton';
+import './home.css';
+import SectionTitle from '../SectionTitle';
+import CustomButton from '../CustomButton';
 import titleImg from '../../assets/images/title-shape.png';
-
-import Reservation from '../Home/Reservation';
+import Reservation from './Reservation';
 import WelcomeResto from './WelcomeResto';
 import { FilterGallery } from './FilterGallery';
 import StarterandMenu from './StarterandMenu';
@@ -35,6 +34,7 @@ const Home = () => {
                     textTransform: 'uppercase',
                     fontWeight: 600,
                     letterSpacing: 0,
+                    bgcolor:'theme.palette.primary.main'
                 }}>
                     We Serve Food, Harmony, & Laughter Since 1998
                 </Typography>
@@ -45,7 +45,7 @@ const Home = () => {
                 </Stack>
             </Box>
         </HeroBanner>
-        <Box className="reservation-form" sx={{p:'5rem',bgcolor:'primary.main',"@media (max-width:600px)": {p:2}}}>
+        <Box className="reservation-form" sx={{p:{sm:'2rem',md:'5rem'},bgcolor:'primary.main'}}>
             <Container>
                 <Reservation/>
             </Container>

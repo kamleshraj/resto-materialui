@@ -36,18 +36,26 @@ const theme = createTheme({
             lineHeight:1,
             margin:'30px 0'
         },
+        h3:{
+            fontFamily: 'Roboto, sans-serif',
+            fontSize:'2.5rem'
+        },
+        h4:{
+            fontFamily: 'Roboto, sans-serif',
+            fontSize:'2rem'
+        },
+        h5:{
+            fontFamily: 'Roboto, sans-serif',
+            fontSize:'1.5'
+        },
         h6:{
             fontFamily: 'Roboto, sans-serif',
-            fontSize:'.9rem'
+            fontSize:'1.1rem'
         },
         body1:{
             fontSize:'1.1rem'
-        }
-    },
-    components:{
-        MuiInputLabel: {
-
-        }
+        },
+        body:{fontSize:'0.9rem'}
     }
 })
 

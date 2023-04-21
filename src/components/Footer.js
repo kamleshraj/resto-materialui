@@ -22,7 +22,7 @@ const Footer = () => {
         <Grid container>
           <Grid item xs={12} sm={6} lg={4}>
             <Logo/>
-            <Typography variant='body1' color={'text.main'} sx={{paddingRight:{xs:'0',lg:'11rem'},marginTop:4,marginBottom:4}}>
+            <Typography variant='body1' color={'text.main'} sx={{paddingRight:{xs:'2rem',lg:'5rem'},marginTop:4,marginBottom:4}}>
               Be the first to know about new collections, special events, and whats going on at Our Place. We are creative
             </Typography>
             <Typography variant='body1' sx={{color:'secondary.main','& a':{display:'block',color:'text.white',fontSize:'1.5rem',fontWeight:'bold'}}}>
@@ -31,7 +31,7 @@ const Footer = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6} lg={3}>
-            <Typography variant='h5' component={'h6'} color={'text.white'}>
+            <Typography variant='h5' component={'h4'} color={'text.white'}>
               Get In Tuch
             </Typography>
             <List>
@@ -60,7 +60,7 @@ const Footer = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} lg={2} sx={{paddingLeft:{xs:0,lg:3}}}>
-            <Typography variant='h5' component={'h6'} color={'text.white'}>
+            <Typography variant='h5' component={'h4'} color={'text.white'}>
               Pages
             </Typography>
             <List className='footer-pagelink'>
@@ -98,8 +98,8 @@ const Footer = () => {
         </Grid>
     </Box>
     <Box sx={{bgcolor:'primary.dark',textAlign:'center',color:'text.main', padding:'1.5rem',borderTop:'1px solid #e9e9e929'}}>
-      <Typography variant='body1'>
-      Copyright @2023 Dinenos by ReacThemes
+      <Typography variant='body'>
+        Copyright @2023 Dummy Project by Kamlesh Kumar
       </Typography>
     </Box>
     </>

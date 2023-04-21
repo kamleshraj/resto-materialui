@@ -1,12 +1,12 @@
 import React from 'react'
 import { Grid,Box, Typography } from '@mui/material';
-import SectionTitle from '../../components/SectionTitle';
+import SectionTitle from '../SectionTitle';
 import about1 from '../../assets/images/home/about1.png';
 import about2 from '../../assets/images/home/about2.jpg';
 import lineshap from '../../assets/images/home/line-shape1-1.webp'
 import round from '../../assets/images/home/round.png'
 import titleImg from '../../assets/images/title-shape.png';
-import CustomButton from '../../components/CustomButton';
+import CustomButton from '../CustomButton';
 import styled from '@emotion/styled';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
@@ -47,7 +47,7 @@ const WelcomeImage = styled(Box)`
         .aboutus2-main{display:none}
     }
     @media (min-width: 601px) and (max-width:901px){
-        .about2-img{max-width:150%}
+        .about2-img{max-width:125%}
         .lineshap{max-width:80%}
         .welcome-main-content{padding-top:150px}
     }

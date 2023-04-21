@@ -1,8 +1,8 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
-import  MenuItems  from '../pages/Home/MenuItems'
+import SectionTitle from '../../components/SectionTitle'
+import  MenuItems  from '../MenuCards'
 import { Box, Container } from '@mui/material'
-import { MenuData } from '../data/mData'
+import { MenuData } from '../../data/mData'
 
 const Menu = () => {
   return (
