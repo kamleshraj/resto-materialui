@@ -8,7 +8,7 @@ import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import { CssBaseline } from '@mui/material';
-import MenuDetails from './components/Menu/MenuDetails';
+import MenuDetails from './pages/Menu/MenuDetails';
 const App=()=>{
   return (
     <>
