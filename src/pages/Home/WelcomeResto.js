@@ -1,12 +1,12 @@
 import React from 'react'
 import { Grid,Box, Typography } from '@mui/material';
-import SectionTitle from '../SectionTitle';
+import SectionTitle from '../../components/SectionTitle';
 import about1 from '../../assets/images/home/about1.png';
 import about2 from '../../assets/images/home/about2.jpg';
 import lineshap from '../../assets/images/home/line-shape1-1.webp'
 import round from '../../assets/images/home/round.png'
 import titleImg from '../../assets/images/title-shape.png';
-import CustomButton from '../CustomButton';
+import CustomButton from '../../components/CustomButton';
 import styled from '@emotion/styled';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';

@@ -2,15 +2,15 @@ import React from 'react'
 import {Box, Typography, Container, Stack, Grid} from '@mui/material';
 import BannerImg from '../../assets/images/banner.jpeg';
 import './home.css';
-import SectionTitle from '../SectionTitle';
-import CustomButton from '../CustomButton';
+import SectionTitle from '../../components/SectionTitle';
+import CustomButton from '../../components/CustomButton';
 import titleImg from '../../assets/images/title-shape.png';
 import Reservation from './Reservation';
 import WelcomeResto from './WelcomeResto';
 import { FilterGallery } from './FilterGallery';
 import StarterandMenu from './StarterandMenu';
 import styled from '@emotion/styled';
-import CounterUpPage from './CouterUp/CounterUpPage';
+import CounterUpPage from './CounterUpPage';
 
 const HeroBanner=styled(Box)({
     background:`url(${BannerImg})`,

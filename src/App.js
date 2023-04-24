@@ -1,11 +1,11 @@
 
 import CustomNavbar from './components/Header/CustomNavbar';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
-import Menu from './components/Menu/Menu';
-import Aboutus from './components/About/Aboutus';
-import Contactus from './components/Contact/Contactus';
-import PageNotFound from './components/PageNotFound/PageNotFound';
-import Home from './components/Home/Home';
+import Menu from './pages/Menu/Menu';
+import Aboutus from './pages/About/Aboutus';
+import Contactus from './pages/Contact/Contactus';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
+import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import { CssBaseline } from '@mui/material';
 import MenuDetails from './components/Menu/MenuDetails';

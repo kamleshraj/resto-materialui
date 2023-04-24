@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Box, Tabs,Tab} from '@mui/material'
 import { MenuData } from '../../data/mData';
-import MenuItems  from '../MenuCards'
+import MenuItems  from '../../components/MenuCards'
 
 export const FilterGallery = () => {
   const [tabIndex, setTabIndex] = useState(0);

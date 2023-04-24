@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from '../../components/SectionTitle'
-import  MenuItems  from '../MenuCards'
+import  MenuItems  from '../../components/MenuCards'
 import { Box, Container } from '@mui/material'
 import { MenuData } from '../../data/mData'
 

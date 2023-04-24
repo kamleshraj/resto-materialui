@@ -1,9 +1,0 @@
-Exploring Materialui components, custom theme, and create a website template with following components
-1) Appbar responsive
-2) Banner
-3) Reservarion form (used date and time picker)
-4) Food Menu (used card, grid, filter products button)
-5) counterUp
-6) bottom to Top
-7) Footer
-make it fully responsive
