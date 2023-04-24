@@ -50,10 +50,10 @@ const Home = () => {
                 <Reservation/>
             </Container>
         </Box>
-        <Box className='welcome-main' sx={{p:'7rem 2.5rem 12rem 2.5rem',bgcolor:'primary.light',"@media (max-width:600px)": {p:2}}}>
+        <Box className='welcome-main' sx={{p:{xs:'2rem',lg:'7rem 2.5rem 12rem 2.5rem'},bgcolor:'primary.light'}}>
             <WelcomeResto/>
         </Box>
-        <Box className='ourfood-menu' sx={{bgcolor:'primary.main',p:'7rem 2.5rem 7rem 2.5rem',"@media (max-width:600px)": {p:2}}}>
+        <Box className='ourfood-menu' sx={{bgcolor:'primary.main',p:'7rem 2.5rem 7rem 2.5rem'}}>
             <Box className='ourfood-menu-header' sx={{textAlign:'center'}}>
                 <Box component={'img'} src={titleImg} alt='title image'/>
                 <SectionTitle titleHeader={'Our Food Menu'} titleColor={'text.white'}/>
@@ -63,7 +63,7 @@ const Home = () => {
             </Box>
             <FilterGallery/>
         </Box>
-        <Box className='counter-main' sx={{bgcolor:'primary.light',p:'5rem 2.5rem 5rem 2.5rem',"@media (max-width:600px)": {p:2}}}>
+        <Box className='counter-main' sx={{bgcolor:'primary.light',p:{xs:'2rem',lg:'5rem 2.5rem 5rem 2.5rem'}}}>
            <Grid container>
                 <Grid item sx={{minWidth:'250px',textAlign:'center'}}>
                     <CounterUpPage counterEnd={10} counterTitle={'Awards Won'}/>
@@ -82,7 +82,7 @@ const Home = () => {
                 </Grid>
            </Grid>
         </Box>
-        <Box className='starter-main-dish' sx={{bgcolor:'primary.main',p:'5rem 2.5rem 5rem 2.5rem',"@media (max-width:600px)": {p:2}}}>
+        <Box className='starter-main-dish' sx={{bgcolor:'primary.main',p:{xs:'2rem', lg:'5rem 2.5rem 5rem 2.5rem'}}}>
             <Box className='ourfood-menu-header' sx={{textAlign:'center',marginBottom:{sm:'15px',lg:'60px'}}}>
                 <Box component={'img'} src={titleImg} alt='title image'/>
                 <SectionTitle titleHeader={'Starters & Main Dishes'} titleColor={'text.white'}/>

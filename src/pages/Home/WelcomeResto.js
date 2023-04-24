@@ -8,12 +8,13 @@ import round from '../../assets/images/home/round.png'
 import titleImg from '../../assets/images/title-shape.png';
 import CustomButton from '../../components/CustomButton';
 import styled from '@emotion/styled';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+// import useMediaQuery from '@mui/material/useMediaQuery';
+// import { useTheme } from '@mui/material/styles';
 
 const WelcomeImage = styled(Box)`
     display:flex;
     align-items:center;
+    justify-content: center;
     .lineshap{
        position:absolute;
        left:-5px;
@@ -61,12 +62,11 @@ const WelcomeImage = styled(Box)`
 `;
 
 const WelcomeResto = () => {
-    const theme = useTheme();
-    const matches = useMediaQuery(theme.breakpoints.up('sm'));
-    console.log(matches)
+   //const theme = useTheme();
+    //const matches = useMediaQuery(theme.breakpoints.up('sm'));
   return (
     <Grid container spacing={2}>
-        <Grid item sm={12} md={6}>
+        <Grid item xs={12} md={6}>
             <WelcomeImage className='welcome-resto-main'>
                 <Box component={'img'} src={about1} alt={'aboutus'} className='aboutus1'/>
                 <Box component={'img'} src={lineshap} alt={'lineshap'} className='lineshap'/>
@@ -76,7 +76,7 @@ const WelcomeResto = () => {
                 </Box>
             </WelcomeImage>
         </Grid>
-        <Grid item sm={12} md={6}>
+        <Grid item xs={12} md={6}>
             <Box className="welcome-main-content" sx={{textAlign:'center',padding:{xs:'15px',sm:'140px 15px 0 15px', md:'60px 0 0 115px',lg:'60px'}}}>
                 <Box component={'img'} src={titleImg} alt='title image'/>
                 <SectionTitle titleHeader={'Welcome To Our Luxury Restaurant'} titleColor={'text.white'}/>
